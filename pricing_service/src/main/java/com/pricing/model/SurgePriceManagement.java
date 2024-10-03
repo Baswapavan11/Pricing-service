@@ -15,7 +15,7 @@ import lombok.Data;
 @Data
 @Entity
 @Table(name = "surge_price_management")
-public class surgePriceManagement {
+public class SurgePriceManagement {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
