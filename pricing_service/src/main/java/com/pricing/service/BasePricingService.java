@@ -43,6 +43,8 @@ public class BasePricingService {
 		basePricing.setCgst(basePricingDetails.getCgst());
 		basePricing.setSgst(basePricingDetails.getSgst());
 		basePricing.setServiceType(basePricingDetails.getServiceType());
+		basePricing.setCreatedBy(basePricingDetails.getCreatedBy());
+		basePricing.setUpdatedBy(basePricingDetails.getUpdatedBy());
 		return basePricingRepository.save(basePricing);
 	}
 

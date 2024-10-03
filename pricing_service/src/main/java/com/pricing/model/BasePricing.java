@@ -1,4 +1,4 @@
-package com.pricing.model;
+	package com.pricing.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -45,5 +45,10 @@ public class BasePricing {
 
     @Column(name = "service_type", nullable = false)
     private Long serviceType;
-
+    
+    @Column(name = "created_by", nullable = false)
+    private Long createdBy;
+    
+    @Column(name = "updated_by", nullable = false)
+    private Long updatedBy;
 }

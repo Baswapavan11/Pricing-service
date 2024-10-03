@@ -40,6 +40,8 @@ public class DistancePricingService {
         distancePricing.setTenantId(distancePricingDetails.getTenantId());
         distancePricing.setIsApproved(distancePricingDetails.getIsApproved());
         distancePricing.setUpdatedBy(distancePricingDetails.getUpdatedBy());
+        distancePricing.setCreatedAt(distancePricingDetails.getCreatedAt());
+        distancePricing.setCreatedBy(distancePricingDetails.getCreatedBy());
         return distancePricingRepository.save(distancePricing);
     }
 

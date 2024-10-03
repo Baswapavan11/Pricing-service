@@ -47,6 +47,9 @@ public class SurgePriceManagementService {
         surgePriceManagement.setTenantId(surgePriceManagementDetails.getTenantId());
         surgePriceManagement.setIsApproved(surgePriceManagementDetails.getIsApproved());
         surgePriceManagement.setUpdatedBy(surgePriceManagementDetails.getUpdatedBy());
+        surgePriceManagement.setCgst(surgePriceManagementDetails.getCgst());
+        surgePriceManagement.setSgst(surgePriceManagementDetails.getSgst());
+        surgePriceManagement.setServiceType(surgePriceManagementDetails.getServiceType());
         return surgePriceManagementRepository.save(surgePriceManagement);
     }
 

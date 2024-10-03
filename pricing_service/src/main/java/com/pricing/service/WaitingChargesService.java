@@ -38,6 +38,8 @@ public class WaitingChargesService {
         waitingCharges.setTenantId(waitingChargesDetails.getTenantId());
         waitingCharges.setUpdatedAt(waitingChargesDetails.getUpdatedAt());
         waitingCharges.setUpdatedBy(waitingChargesDetails.getUpdatedBy());
+        waitingCharges.setCreatedAt(waitingChargesDetails.getCreatedAt());
+        waitingCharges.setCreatedBy(waitingChargesDetails.getCreatedBy());
         return waitingChargesRepository.save(waitingCharges);
     }
 

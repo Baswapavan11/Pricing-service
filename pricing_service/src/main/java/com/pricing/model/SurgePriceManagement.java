@@ -69,4 +69,12 @@ public class SurgePriceManagement {
 	@Column(name = "updated_by", nullable = false)
 	private Long updatedBy;
 	
+	@Column(name = "cgst", nullable = false)
+	private Float cgst;
+	
+	@Column(name = "sgst", nullable = false)
+	private Float sgst;
+	
+	@Column(name = "service_type", nullable = false)
+	private Long serviceType;
 }

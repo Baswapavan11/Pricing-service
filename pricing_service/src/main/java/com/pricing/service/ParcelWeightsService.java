@@ -37,8 +37,10 @@ public class ParcelWeightsService {
         parcelWeights.setMinWeight(parcelWeightsDetails.getMinWeight());
         parcelWeights.setMaxWeight(parcelWeightsDetails.getMaxWeight());
         parcelWeights.setIsActive(parcelWeightsDetails.getIsActive());
-        parcelWeights.setUpdatedAt(parcelWeightsDetails.getUpdatdeAt());
+        parcelWeights.setUpdatdeAt(parcelWeightsDetails.getUpdatdeAt());
         parcelWeights.setUpdatedBy(parcelWeightsDetails.getUpdatedBy());
+        parcelWeights.setCreatedAt(parcelWeightsDetails.getCreatedAt());
+        parcelWeights.setCreatedBy(parcelWeightsDetails.getCreatedBy());
         return parcelWeightsRepository.save(parcelWeights);
     }
 

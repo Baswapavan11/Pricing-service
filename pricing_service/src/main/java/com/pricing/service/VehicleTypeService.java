@@ -38,6 +38,8 @@ public class VehicleTypeService {
         vehicleType.setTenantId(vehicleTypeDetails.getTenantId());
         vehicleType.setIsActive(vehicleTypeDetails.getIsActive());
         vehicleType.setUpdatedBy(vehicleTypeDetails.getUpdatedBy());
+        vehicleType.setCreatedAt(vehicleTypeDetails.getCreatedAt());
+        vehicleType.setCreatedBy(vehicleTypeDetails.getCreatedBy());
         return vehicleTypeRepository.save(vehicleType);
     }
 

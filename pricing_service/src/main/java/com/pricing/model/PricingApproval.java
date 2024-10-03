@@ -40,5 +40,4 @@ public class PricingApproval {
 
     @Column(name = "base_price_id", nullable = false)
     private Long basePriceId;
-
 }
