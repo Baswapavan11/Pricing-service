@@ -35,7 +35,6 @@ public class BasePricingService {
 		BasePricing basePricing = getBasePricingById(id);
 		basePricing.setVehicleTypeId(basePricingDetails.getVehicleTypeId());
 		basePricing.setMinFare(basePricingDetails.getMinFare());
-		basePricing.setCostPerAdditionalDistance(basePricingDetails.getCostPerAdditionalDistance());
 		basePricing.setUpdatedAt(basePricingDetails.getUpdatedAt());
 		basePricing.setTenantId(basePricingDetails.getTenantId());
 		basePricing.setBaseKilometers(basePricingDetails.getBaseKilometers());

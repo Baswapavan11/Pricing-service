@@ -19,9 +19,6 @@ public class BasePricing {
     @Column(name = "min_fare", nullable = false)
     private Double minFare;
 
-    @Column(name = "cost_per_additional_distance", nullable = false)
-    private Double costPerAdditionalDistance;
-
     @Column(name = "created_at", nullable = false)
     private LocalDateTime createdAt;
 
