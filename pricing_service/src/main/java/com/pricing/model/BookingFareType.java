@@ -33,10 +33,4 @@ public class BookingFareType {
 
 	@Column(name = "updated_at")
 	private LocalDateTime updatedAt;
-
-	@Column(name = "service_offerings_id")
-	private int serviceOfferings;
-
-	@Column(name = "fare_type_id")
-	private int fareType;
 }

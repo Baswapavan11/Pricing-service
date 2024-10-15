@@ -39,8 +39,8 @@ public class SurgePriceManagementController {
 
     // Update an existing SurgePriceManagement entry by ID
     @PutMapping("/{id}")
-    public ResponseEntity<SurgePriceManagement> updateSurgePriceManagement(@PathVariable Long id, @RequestBody SurgePriceManagement surgePriceManagement) {
-        SurgePriceManagement updatedSurgePriceManagement = surgePriceManagementService.updateSurgePriceManagement(id, surgePriceManagement);
+    public ResponseEntity<SurgePriceManagement> updateSurgePriceManagementById(@PathVariable Long id, @RequestBody SurgePriceManagement surgePriceManagement) {
+        SurgePriceManagement updatedSurgePriceManagement = surgePriceManagementService.updateSurgePriceManagementById(id, surgePriceManagement);
         return new ResponseEntity<>(updatedSurgePriceManagement, HttpStatus.OK);
     }
 

@@ -31,25 +31,24 @@ public class SurgePriceManagementService {
     }
 
     // Update SurgePriceManagement
-    public SurgePriceManagement updateSurgePriceManagement(Long id, SurgePriceManagement surgePriceManagementDetails) {
+    public SurgePriceManagement updateSurgePriceManagementById(Long id, SurgePriceManagement surgePriceManagementDetails) {
         SurgePriceManagement surgePriceManagement = getSurgePriceManagementById(id);
+        surgePriceManagement.setFareStructureId(surgePriceManagementDetails.getFareStructureId());
         surgePriceManagement.setStartDate(surgePriceManagementDetails.getStartDate());
-        surgePriceManagement.setDay(surgePriceManagementDetails.getDay());
         surgePriceManagement.setStartTime(surgePriceManagementDetails.getStartTime());
         surgePriceManagement.setEndTIme(surgePriceManagementDetails.getEndTIme());
-        surgePriceManagement.setVehicleTypeId(surgePriceManagementDetails.getVehicleTypeId());
         surgePriceManagement.setEndDate(surgePriceManagementDetails.getEndDate());
-        surgePriceManagement.setDayOfWeek(surgePriceManagementDetails.getDayOfWeek());
         surgePriceManagement.setAmount(surgePriceManagementDetails.getAmount());
         surgePriceManagement.setMultiplier(surgePriceManagementDetails.getMultiplier());
         surgePriceManagement.setDistanceWisePrice(surgePriceManagementDetails.getDistanceWisePrice());
         surgePriceManagement.setUpdatedAt(surgePriceManagementDetails.getUpdatedAt());
-        surgePriceManagement.setTenantId(surgePriceManagementDetails.getTenantId());
         surgePriceManagement.setIsApproved(surgePriceManagementDetails.getIsApproved());
         surgePriceManagement.setUpdatedBy(surgePriceManagementDetails.getUpdatedBy());
-        surgePriceManagement.setCgst(surgePriceManagementDetails.getCgst());
-        surgePriceManagement.setSgst(surgePriceManagementDetails.getSgst());
-        surgePriceManagement.setServiceType(surgePriceManagementDetails.getServiceType());
+        surgePriceManagement.setIsActive(surgePriceManagementDetails.getIsActive());
+        surgePriceManagement.setCreatedAt(surgePriceManagementDetails.getCreatedAt());
+        surgePriceManagement.setCreatedBy(surgePriceManagementDetails.getCreatedBy());
+        surgePriceManagement.setApprovedAt(surgePriceManagementDetails.getApprovedAt());
+        surgePriceManagement.setApprovedBy(surgePriceManagementDetails.getApprovedBy());
         return surgePriceManagementRepository.save(surgePriceManagement);
     }
 
